@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formas básicas</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Formas básicas</h1>
+
+  <h2>Rect</h2>
+  <svg>
+    <rect x="100" y="25" width="100" height="100"/>
+  </svg>
+
+  <h2>Circle</h2>
+  <svg>
+    <circle r="55" cx="150" cy="75"/>
+  </svg>
+
+  <h2>Ellipse</h2>
+  <svg>
+    <ellipse rx="100" ry="50" cx="150" cy="75"/>
+  </svg>
+
+  <h2>Line</h2>
+  <svg>
+    <line x1="25" y1="25" x2="275" y2="125" stroke="#000" stroke-width="4"/>
+  </svg>
+
+  <h2>Polyline</h2>
+  <svg>
+    <polyline points="0,25 125,25 125,75 175,75 175,125 300,125" fill="none" stroke="#000" stroke-width="4"/>
+  </svg>
+
+  <h2>Polygon</h2>
+  <svg>
+    <polygon points="121,25 179,25 208,75 179,125 121,125 92,75" fill="#000"/>
+  </svg>
+
+  <h2>Path</h2>
+  <svg>
+    <path
+      stroke="#000"
+      stroke-width="4"
+      fill="none"
+      d="M150,25 L125,75 C125,75,100,125,150,125 C150,125,200,125,175,75 z"
+    />
+  </svg>
+</body>
+</html>
