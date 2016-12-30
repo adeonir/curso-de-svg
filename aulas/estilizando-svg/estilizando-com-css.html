@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Estilizando o SVG com CSS</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Estilizando o SVG com CSS</h1>
+
+  <h2>Estilo inline</h2>
+  <svg style="width: 300px; height: 300px;" viewBox="0 0 300 300">
+    <polygon
+    style="fill: orange; stroke: red; stroke-width: 4;"
+    points="150 230.5 70.6489909 272.217294 85.8036852 183.858647 21.6073703 121.282706 110.324495 108.391353 150 28 189.675505 108.391353 278.39263 121.282706 214.196315 183.858647 229.351009 272.217294"/>
+  </svg>
+
+  <h2>Estilo dentro do SVG</h2>
+  <svg width="300" height="300" viewBox="0 0 300 300">
+    <style>
+      polygon {
+        fill: orange;
+        stroke: blue;
+        stroke-width: 4;
+      }
+    </style>
+    <polygon points="150 230.5 70.6489909 272.217294 85.8036852 183.858647 21.6073703 121.282706 110.324495 108.391353 150 28 189.675505 108.391353 278.39263 121.282706 214.196315 183.858647 229.351009 272.217294"/>
+  </svg>
+
+  <h2>Estilo fora do SVG</h2>
+  <style>
+    .star {
+      fill: orange;
+      stroke: green;
+      stroke-width: 4;
+    }
+  </style>
+  <svg width="300" height="300" viewBox="0 0 300 300">
+    <polygon class="star" points="150 230.5 70.6489909 272.217294 85.8036852 183.858647 21.6073703 121.282706 110.324495 108.391353 150 28 189.675505 108.391353 278.39263 121.282706 214.196315 183.858647 229.351009 272.217294"/>
+  </svg>
+
+  <h2>Estilo externo</h2>
+  <link rel="stylesheet" href="css/star.css">
+  <svg width="300" height="300" viewBox="0 0 300 300">
+    <polygon id="star" points="150 230.5 70.6489909 272.217294 85.8036852 183.858647 21.6073703 121.282706 110.324495 108.391353 150 28 189.675505 108.391353 278.39263 121.282706 214.196315 183.858647 229.351009 272.217294"/>
+  </svg>
+</body>
+</html>
