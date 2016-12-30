@@ -1,0 +1,32 @@
+body {
+  background: #3c1111;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+#detalhe-externo,
+#circulo-verde,
+#textos,
+#inner-artwork {
+  transition: all .5s ease-in-out;
+}
+
+@media(max-width: 768px) {
+  #detalhe-externo {
+    opacity: 0;
+  }
+}
+
+@media(max-width: 520px) {
+  #circulo-verde,
+  #textos {
+    opacity: 0;
+  }
+
+  #inner-artwork {
+    fill: #067655;
+  }
+}
