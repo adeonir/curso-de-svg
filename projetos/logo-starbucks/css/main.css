@@ -1,18 +1,33 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
 body {
+  background: #3c1111;
   padding: 50px;
 }
 
-h1 {
-  margin-bottom: 50px;
+.container {
+  max-width: 700px;
+  margin: auto;
 }
 
-h2 {
-  margin-bottom: 10px;
+#detalhe-externo,
+#circulo-verde,
+#textos,
+#inner-artwork {
+  transition: all .5s ease-in-out;
+}
+
+@media(max-width: 768px) {
+  #detalhe-externo {
+    opacity: 0;
+  }
+}
+
+@media(max-width: 520px) {
+  #circulo-verde,
+  #textos {
+    opacity: 0;
+  }
+
+  #inner-artwork {
+    fill: #067655;
+  }
 }

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: #1F7FDD;
+  padding: 50px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+#castle,
+#walt,
+#isney {
+  transition: all .3s ease-in-out;
+}
+
+@media(max-width: 768px) {
+  #castle {
+    opacity: 0;
+  }
+}
+
+@media(max-width: 600px) {
+  #walt {
+    opacity: 0;
+  }
+}
+
+@media(max-width: 486px) {
+  #isney {
+    opacity: 0;
+  }
+}
